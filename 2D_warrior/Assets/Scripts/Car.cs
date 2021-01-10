@@ -114,13 +114,186 @@ public class Car : MonoBehaviour
 
     // 方法語法
 
-    // 修飾詞 傳回類型 名稱　() { 程式區塊，陳述式，演算法 }
+    // 修飾詞 傳回類型 名稱　(參數類型 , 參數名稱 , 參數類型 , 參數名稱 , ...... ) { 程式區塊，陳述式，演算法 }
 
     // void 無傳回 : 呼叫此方法不會傳回任何資料
 
+    // 自訂方法
+
+    // 不會執行 , 必須要呼叫執行
+
     private void Test()
+
     {
 
+        // 輸出 方法
+
+        print("哈囉~");
+
     }
+
+    // 傳回類型 int
+
+    // 必須傳回 整數資料
+
+    private int Ten()
+
+    {
+
+        // 傳回
+
+        return 10;
+
+    }
+
+    private float OnePointFive()
+
+    {
+
+        return 1.5f;
+
+    }
+
+    private string Name()
+
+    {
+
+        return "KID";
+
+    }
+
+    // 維護擴充性
+
+    private void DriveForward()
+
+    {
+
+        print("往前開");
+
+        print("開車音效");
+
+    }
+
+    private void DriveBack()
+
+    {
+
+        print("往後開");
+
+        print("開車音效");
+
+    }
+
+    private void DriveRight()
+
+    {
+
+        print("往右開");
+
+        print("開車音效");
+
+    }
+
+    private void DriveLeft()
+
+    {
+
+        print("往左開");
+
+        print("開車音效");
+
+    }
+
+    /// <summary>
+    /// 
+    /// 開車方法
+    /// 
+    /// </summary>
+    /// 
+    /// <param name="direction">方向</param>
+    /// 
+    /// <param name="sound">音效</param>
+    /// 
+    /// <param name="speed">速度</param>
+    /// 
+
+    private void Drive(string direction , string sound , int speed)
+
+    {
+
+        print("開車方向 : " + direction);
+
+        print("開車音效 : " + sound);
+
+        print("開車速度 : " + speed);
+
+    }
+    
     #endregion
+
+    #region // 名稱藍色 : 事件...
+
+    // 名稱藍色 : 事件
+
+    // 在特定時間點會執行的方法
+
+    // 開始事件 : 遊戲開始執行一次
+
+    #endregion
+
+    private void Start()
+
+    {
+        #region 練習欄位取得與設定
+
+        // 使用欄位
+
+        // 取得 Get
+
+        print("品牌 : " + brand);
+
+        print("高度 : " + height);
+
+        // 設定 Set
+
+        haswindow = false;
+
+        weight = 5.5f;
+
+        #endregion
+
+        // 呼叫方法
+
+        // 方法名稱();
+
+        Test();
+
+        // 傳回方法使用方式
+
+        // 1 . 直接當作傳回類型資料使用
+
+        print("傳回的整數 : " + Ten());
+
+        print("傳回的浮點數 : " + OnePointFive());
+
+        // 2 . 儲存在區域變數內
+
+        // 區域變數 : 在事件或方法內可使用的欄位
+
+        // 僅限於此括號內可使用
+
+        string myName = Name();
+
+        print(myName);
+
+        // 呼叫時輸入的 引數
+
+        Drive("後面","噗噗噗",100);
+
+        Drive("前面", "噗噗噗", 50);
+
+        Drive("左邊", "咻咻咻", 999);
+
+    }
+
 }
