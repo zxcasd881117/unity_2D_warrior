@@ -1,25 +1,95 @@
-﻿using UnityEngine;
+﻿using UnityEngine ;
 
 public class Player : MonoBehaviour
-{
-    [Header("移動速度"), Range(0, 1000)]
-    public float speed = 10.5f;
-    [Header("跳越高度"), Range(0, 3000)]
-    public float jump = 100;
-    [Header("是否在地板上"), Tooltip("判斷腳色是否在地面上")]
-    public bool isGrounded;
-    [Header("子彈")]
-    public GameObject bullet;
-    [Header("子彈生成點")]
-    public Transform pointSpawn;
-    [Header("子彈速度"), Range(0, 5000)]
-    public int speedBullet = 800;
-    [Header("開槍音效")]
-    public AudioClip soundFire;
-    [Header("血量"), Range(0, 2000)]
-    public float hp = 100;
 
-    private AudioSource and;
-    private Rigidbody2D rig;
-    private Animator ani;
+{
+
+    # region 欄位
+
+    [ Header ( " 移動速度 " ) , Range ( 0 , 1000 ) ]
+
+    public float speed = 10.5f ;
+
+    [ Header ( " 跳越高度 " ) , Range ( 0 , 3000 ) ]
+
+    public float jump = 100 ;
+
+    [ Header ( " 是否在地板上 " ) , Tooltip ( " 判斷腳色是否在地面上 " ) ]
+
+    public bool isGrounded ;
+
+    [ Header ( " 子彈 " ) ]
+
+    public GameObject bullet ;
+
+    [ Header ( " 子彈生成點 " ) ]
+
+    public Transform pointSpawn ;
+
+    [ Header ( " 子彈速度 " ) , Range ( 0 , 5000 ) ]
+
+    public int speedBullet = 800 ;
+
+    [ Header ( " 開槍音效 " ) ]
+
+    public AudioClip soundFire ;
+
+    [ Header ( " 血量 " ) , Range ( 0 , 2000 ) ]
+
+    public float hp = 100 ;
+
+    private AudioSource and ;
+
+    private Rigidbody2D rig ;
+
+    private Animator ani ;
+
+    # endregion
+
+    # region 方法
+
+    /// <summary>
+    /// 移動
+    /// </summary>
+    private void Move ( )
+    {
+       
+    }
+
+    /// <summary>
+    /// 跳躍
+    /// </summary>
+    private void Jump ( )
+    {
+
+    }
+
+    /// <summary>
+    /// 開槍
+    /// </summary>
+    private void Fire ( )
+    {
+
+    }
+
+    /// <summary>
+    /// 受傷
+    /// </summary>
+    /// < param name = " getDamge " > 造成的傷害 </param >
+    private void Damage ( float getDamge )
+
+    {
+
+    }
+
+    /// <summary>
+    /// 死亡
+    /// </summary>
+    private void Dead ( )
+    {
+
+    }
+
+    # endregion
 }
+

@@ -1,24 +1,26 @@
-﻿using UnityEngine;
+﻿using UnityEngine ;
 
 public class Car : MonoBehaviour
+
 {
-    #region 練習欄位
+
+    # region 練習欄位
 
     // 單行註解 : 不會被程式讀取
 
     // 欄位語法
 
-    // 修飾詞 類型 名稱(指定 值);
+    // 修飾詞 類型 名稱( 指定 值 ) ;
 
     // 四大類型
 
     // 整數 int
 
-    // 浮點數 float  　　小數點後面必須加上 f 或 F
+    // 浮點數 float  小數點後面必須加上 f 或 F
 
-    // 字串 string   　　必須用雙引號 "" 包覆住
+    // 字串 string   必須用雙引號 " " 包覆住
 
-    // 布林值 bool　     是 true , 否 false
+    // 布林值 bool   是 true , 否 false
 
     // 修飾詞
 
@@ -26,13 +28,13 @@ public class Car : MonoBehaviour
 
     // 公開 : 會顯示 public
 
-    // 指定符號 =
+    // 指定符號 = 
 
     // 欄位屬性
 
     // 語法
 
-    // [屬性名稱("字串或對應的值")]
+    // [ 屬性名稱 ( " 字串或對應的值 " ) ]
 
     // 標題 Header
 
@@ -40,81 +42,81 @@ public class Car : MonoBehaviour
 
     // 範圍 Range
 
-    [Header("高度")]
+    [ Header ( " 高度 " ) ]
 
-    [Range(1, 10)]
+    [ Range ( 1 , 10 ) ]
 
-    public int height = 5;
+    public int height = 5 ;
 
-    [Header("重量"), Tooltip("這是汽車的重量，單位是噸。"), Range(2.5f, 10.5f)]
+    [ Header ( " 重量 " ) , Tooltip ( " 這是汽車的重量，單位是噸 。 " ) , Range ( 2.5f , 10.5f ) ]
 
-    public float weight = 5.5f;
+    public float weight = 5.5f ;
 
-    [Header("品牌")]
+    [ Header ( " 品牌 " ) ]
 
-    public string brand = "BMW";
+    public string brand = " BMW " ;
 
-    [Header("是否有天窗")]
+    [ Header ( " 是否有天窗 " ) ]
 
-    public bool haswindow = true;
+    public bool haswindow = true ;
 
     // 其他類型
 
     // 顏色 Color
 
-    public Color myColor1;
+    public Color myColor1 ;
 
-    public Color red = Color.red;
+    public Color red = Color . red ;
 
-    public Color blue = Color.blue;
+    public Color blue = Color . blue ;
 
-    public Color myColor2 = new Color(0.5f, 0.3f, 0.1f);
+    public Color myColor2 = new Color ( 0.5f , 0.3f , 0.1f ) ;
 
-    public Color myColor3 = new Color(0, 0.5f, 0.8f, 0.5f);
+    public Color myColor3 = new Color ( 0 , 0.5f , 0.8f , 0.5f ) ;
 
     // 座標 向量 2 - 4
 
-    public Vector2 v2Zero = Vector2.zero;
+    public Vector2 v2Zero = Vector2 . zero ;
 
-    public Vector2 v2One = Vector2.one;
+    public Vector2 v2One = Vector2 . one ;
 
-    public Vector2 v2A = new Vector2(9, 10);
+    public Vector2 v2A = new Vector2 ( 9 , 10 ) ;
 
-    public Vector3 v3A = new Vector3(1, 2, 3);
+    public Vector3 v3A = new Vector3 ( 1 , 2 , 3 ) ;
 
-    public Vector4 v4A = new Vector4(1, 2, 3, 4);
+    public Vector4 v4A = new Vector4 ( 1 , 2 , 3 , 4 ) ;
 
     // 圖片與音效
 
-    public Sprite picture;
+    public Sprite picture ;
 
-    public AudioClip sound;
+    public AudioClip sound ;
 
     // 遊戲物件 與 元件
 
     // 遊戲物件 : 儲存階層面板內的物件與預製物
 
-    public GameObject objA;
+    public GameObject objA ;
 
-    public GameObject objB;
+    public GameObject objB ;
 
     // 元件 : 屬性面板上可摺疊元件
 
-    public Transform tra;
+    public Transform tra ;
 
-    public Camera cam;
+    public Camera cam ;
 
-    #endregion
+    # endregion
 
-    #region 練習方法
+    # region 練習方法
 
     // 欄位語法
 
-    // 修飾詞 類型 名稱(指定 值);
+    // 修飾詞 類型 名稱 ( 指定 值 ) ;
 
     // 方法語法
 
-    // 修飾詞 傳回類型 名稱　(參數類型 , 參數名稱 , 參數類型 , 參數名稱 , ...... ) { 程式區塊，陳述式，演算法 }
+    // 修飾詞 傳回類型 名稱　( 參數類型 , 參數名稱 , 參數類型 , 參數名稱 , . . . . . . ) { 程式區塊 , 陳述式 , 演算法 }
 
     // void 無傳回 : 呼叫此方法不會傳回任何資料
 
@@ -122,13 +124,13 @@ public class Car : MonoBehaviour
 
     // 不會執行 , 必須要呼叫執行
 
-    private void Test()
+    private void Test ( )
 
     {
 
         // 輸出 方法
 
-        print("哈囉~");
+        print ( " 哈囉 ~ " ) ;
 
     }
 
@@ -136,71 +138,71 @@ public class Car : MonoBehaviour
 
     // 必須傳回 整數資料
 
-    private int Ten()
+    private int Ten ( )
 
     {
 
         // 傳回
 
-        return 10;
+        return 10 ;
 
     }
 
-    private float OnePointFive()
+    private float OnePointFive ( )
 
     {
 
-        return 1.5f;
+        return 1.5f ;
 
     }
 
-    private string Name()
+    private string Name ( )
 
     {
 
-        return "KID";
+        return " KID " ;
 
     }
 
     // 維護擴充性
 
-    private void DriveForward()
+    private void DriveForward ( )
 
     {
 
-        print("往前開");
+        print ( " 往前開 " ) ;
 
-        print("開車音效");
+        print ( " 開車音效 " ) ;
 
     }
 
-    private void DriveBack()
+    private void DriveBack ( )
 
     {
 
-        print("往後開");
+        print ( " 往後開 " ) ;
 
-        print("開車音效");
+        print ( " 開車音效 " ) ;
 
     }
 
-    private void DriveRight()
+    private void DriveRight ( )
 
     {
 
-        print("往右開");
+        print ( " 往右開 " ) ;
 
-        print("開車音效");
+        print ( " 開車音效 " ) ;
 
     }
 
-    private void DriveLeft()
+    private void DriveLeft ( )
 
     {
 
-        print("往左開");
+        print ( " 往左開 " ) ;
 
-        print("開車音效");
+        print ( " 開車音效 " ) ;
 
     }
 
@@ -210,28 +212,53 @@ public class Car : MonoBehaviour
     /// 
     /// </summary>
     /// 
-    /// <param name="direction">方向</param>
+    /// < param name = " direction " > 方向 </param >
     /// 
-    /// <param name="sound">音效</param>
+    /// < param name = " sound " > 音效 </param >
     /// 
-    /// <param name="speed">速度</param>
+    /// < param name = " speed " > 速度 </param >
     /// 
 
-    private void Drive(string direction , string sound , int speed)
+    private void Drive ( string direction , string sound , int speed )
 
     {
 
-        print("開車方向 : " + direction);
+        print ( " 開車方向 : " + direction ) ;
 
-        print("開車音效 : " + sound);
+        print ( " 開車音效 : " + sound ) ;
 
-        print("開車速度 : " + speed);
+        print ( " 開車速度 : " + speed ) ;
 
     }
-    
-    #endregion
 
-    #region // 名稱藍色 : 事件...
+    /// <summary>
+    /// 
+    /// 開起雨刷
+    /// 
+    /// </summary>
+    /// 
+    /// < param name = " speed " > 雨刷速度 </param >
+    /// 參數預設值 : 選填式參數
+    /// 
+    /// 選填式參數必須寫在最右方
+
+    private void OpenBrush ( string sound , int count = 2 , int speed = 50 )
+
+    {
+
+        print ( " 開雨刷 " ) ;
+
+        print ( " 音效 : " + sound ) ;
+
+        print ( " 雨刷的速度 : " + speed ) ;
+
+        print ( " 雨刷的數量 : " + count ) ;
+
+    }
+
+    # endregion
+
+    # region // 名稱藍色 : 事件 . . .
 
     // 名稱藍色 : 事件
 
@@ -239,42 +266,42 @@ public class Car : MonoBehaviour
 
     // 開始事件 : 遊戲開始執行一次
 
-    #endregion
+    # endregion
 
-    private void Start()
+    private void Start ( )
 
     {
-        #region 練習欄位取得與設定
+        # region 練習欄位取得與設定
 
         // 使用欄位
 
         // 取得 Get
 
-        print("品牌 : " + brand);
+        print ( " 品牌 : " + brand ) ;
 
-        print("高度 : " + height);
-
+        print ( " 高度 : " + height ) ;
+        
         // 設定 Set
 
-        haswindow = false;
+        haswindow = false ;
 
-        weight = 5.5f;
+        weight = 5.5f ;
 
-        #endregion
+        # endregion
 
         // 呼叫方法
 
-        // 方法名稱();
+        // 方法名稱 ( ) ;
 
-        Test();
+        Test ( ) ;
 
         // 傳回方法使用方式
 
         // 1 . 直接當作傳回類型資料使用
 
-        print("傳回的整數 : " + Ten());
+        print ( " 傳回的整數 : " + Ten( ) ) ;
 
-        print("傳回的浮點數 : " + OnePointFive());
+        print ( " 傳回的浮點數 : " + OnePointFive( ) ) ;
 
         // 2 . 儲存在區域變數內
 
@@ -282,18 +309,25 @@ public class Car : MonoBehaviour
 
         // 僅限於此括號內可使用
 
-        string myName = Name();
+        string myName = Name ( ) ;
 
-        print(myName);
+        print ( myName ) ;
 
         // 呼叫時輸入的 引數
 
-        Drive("後面","噗噗噗",100);
+        Drive ( " 後面 " , " 噗噗噗 " , 100 ) ;
 
-        Drive("前面", "噗噗噗", 50);
+        Drive ( " 前面 " , " 噗噗噗 " , 50 ) ;
 
-        Drive("左邊", "咻咻咻", 999);
+        Drive ( " 左邊 " , " 咻咻咻 " , 999 ) ;
+
+        OpenBrush ( " 刷刷 " ) ;
+
+        // 指定預設值參數 參數名稱 : 值
+
+        OpenBrush ( " 刷刷 " , speed : 500 ) ;
 
     }
 
 }
+
