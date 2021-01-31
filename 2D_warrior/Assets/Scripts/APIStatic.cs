@@ -27,9 +27,9 @@ public class APIStatic : MonoBehaviour
 
         // 類別名稱 . 靜態屬性
 
-        print( " 隨機值 : " + Random . value ) ;
+        print( "隨機值:" + Random . value ) ;
 
-        print ( " 拍 : " + Mathf . PI ) ;
+        print ( "拍:" + Mathf . PI ) ;
 
         // 設定 靜態屬性
 
@@ -57,11 +57,11 @@ public class APIStatic : MonoBehaviour
 
         // 類別名稱 . 靜態方法 ( 對應引數 ) ;
 
-        print ( " 隨機值介於 100 - 500 : " + Random . Range ( 100 , 500 ) ) ;
+        print ( "隨機值介於100-500:" + Random . Range ( 100 , 500 ) ) ;
 
         int number = Mathf . Abs ( - 99 ) ;
 
-        print ( " 取完絕對值的整數 : " + number ) ;
+        print ( "取完絕對值的整數:" + number ) ;
 
         // 練習區域 : 設定靜態屬性
 
@@ -71,15 +71,15 @@ public class APIStatic : MonoBehaviour
 
         Application . OpenURL ( " https://unity.com/ " ) ;
 
-        print ( " 9.999 去小數點 : " + Mathf . Floor ( 9.999f ) ) ;
+        print ( "9.999去小數點:" + Mathf . Floor ( 9.999f ) ) ;
 
-        print ( " 兩點的距離 : " + Vector3 . Distance ( new Vector3 ( 1 , 1 , 1 ) , new Vector3 ( 22 , 22 , 22 ) ) ) ;
+        print ( "兩點的距離:" + Vector3 . Distance ( new Vector3 ( 1 , 1 , 1 ) , new Vector3 ( 22 , 22 , 22 ) ) ) ;
 
         // 練習區域 : 取得靜態屬性
 
-        print( " 攝影機數量 : " + Camera . allCamerasCount ) ;
+        print( "攝影機數量:" + Camera . allCamerasCount ) ;
 
-        print ( " 2D 重力 : " + Physics2D . gravity ) ;
+        print ( "2D重力:" + Physics2D . gravity ) ;
 
     }
 
@@ -91,17 +91,19 @@ public class APIStatic : MonoBehaviour
 
     {
 
-        print ( " 哈囉 ~ " ) ;
+        print ( "哈囉~" ) ;
 
         // 練習區域 : 取得靜態屬性
 
-        print ( " 是否按下任意鍵 : " + Input . anyKeyDown ) ;
+        print ( "是否按下任意鍵:" + Input . anyKeyDown ) ;
 
         // print ( " 遊戲時間 : " + Time . time ) ;
 
-        print ( " 是否按下空白鍵 : " + Input . GetKeyDown ( "space" ) ) ;
+        print ( "是否按下空白鍵:" + Input . GetKeyDown ( "space" ) ) ;
 
     }
 
 }
+
+
 

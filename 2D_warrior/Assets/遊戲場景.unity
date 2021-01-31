@@ -202,7 +202,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 17789850}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8320234948397507940, guid: a445b5f96cca3d24d98fc3d549b6469d,
+          type: 3}
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &17789850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -509,7 +521,7 @@ GameObject:
   - component: {fileID: 291316357}
   - component: {fileID: 291316356}
   m_Layer: 0
-  m_Name: bg3
+  m_Name: "\u80CC\u666F3"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1060,7 +1072,7 @@ GameObject:
   - component: {fileID: 673481267}
   - component: {fileID: 673481266}
   m_Layer: 0
-  m_Name: bg2
+  m_Name: "\u80CC\u666F2"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1141,7 +1153,7 @@ GameObject:
   - component: {fileID: 704712222}
   - component: {fileID: 704712221}
   m_Layer: 0
-  m_Name: bg1
+  m_Name: "\u80CC\u666F1"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13995,7 +14007,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1551389605}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8320234948397507940, guid: a445b5f96cca3d24d98fc3d549b6469d,
+          type: 3}
+        m_MethodName: BackToMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1551389605
 MonoBehaviour:
   m_ObjectHideFlags: 0
